@@ -19,12 +19,6 @@ const Event = dynamic<EventProps>(
 const ACTIONS: Array<NavigationItem> = [
 	{
 		type: NavigationItemType.LINK,
-		href: '/blog',
-		icon: <Icon className="mr-3" icon="feather:edit-3" />,
-		text: 'Blog',
-	},
-	{
-		type: NavigationItemType.LINK,
 		href: '/projects',
 		icon: <Icon className="mr-3" icon="feather:copy" />,
 		text: 'Projects',
@@ -32,7 +26,7 @@ const ACTIONS: Array<NavigationItem> = [
 	{
 		type: NavigationItemType.LINK,
 		external: true,
-		href: 'https://github.com/nurodev',
+		href: 'https://github.com/vawnair',
 		icon: <Icon className="mr-3" icon="feather:github" />,
 		text: 'GitHub',
 	},
@@ -40,12 +34,12 @@ const ACTIONS: Array<NavigationItem> = [
 
 export default function HomePage() {
 	const today = new Date();
-	const birthday = new Date('1997-08-09');
+	const birthday = new Date('2007-09-17');
 	const age = differenceInYears(today, birthday);
 	const isBirthday =
 		today.getDate() === birthday.getDate() && today.getMonth() === birthday.getMonth();
 
-	const description = `I am a ${age} year old software engineer & games developer`;
+	const description = `I am a ${age} year old photography enthusiast & i'm a`;
 
 	return (
 		<Layout.Default>
