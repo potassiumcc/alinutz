@@ -35,7 +35,7 @@ export default function HomePage() {
 	const description = `I am a ${age} year old photography enthusiast`;
 
 	return (
-		<Layout.Default>
+		<Layout.Default seo={{ title: 'bhop ─ developer' }}>
 			{isBirthday && <Event event={EventType.BIRTHDAY} />}
 			<div className="min-h-screen flex items-center justify-center py-12">
 				<div className="max-w-md sm:max-w-lg md:sm:max-w-2xl lg:sm:max-w-3xl w-full space-y-8 text-center">
