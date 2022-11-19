@@ -1,7 +1,7 @@
 {
 	"$schema": "https://openapi.vercel.sh/vercel.json",
 	"version": 2,
-	"alias": "enviromental.cloud",
+	"alias": "enviroment.cloud",
 	"cleanUrls": true,
 	"public": true,
 	"regions": ["lhr1"],
