@@ -23,7 +23,7 @@ export function useSeoProps(
 			type: 'website',
 			images: [
 				{
-					url: 'https://enviroment.cloud/banner.png',
+					url: ' ',
 					alt: description,
 					width: 1280,
 					height: 720,
