@@ -7,6 +7,7 @@ import { EventType, NavigationItemType } from '~/types';
 import { Layout } from '~/layouts';
 
 import type { EventProps } from '~/components/Event.component';
+import type { NavigationItem } from '~/types';
 
 const Event = dynamic<EventProps>(
 	() => import('~/components/Event.component').then(({ Event }) => Event),
