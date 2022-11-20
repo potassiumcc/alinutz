@@ -2,7 +2,7 @@ import dynamic from 'next/dynamic';
 import { differenceInYears } from 'date-fns';
 import { Icon } from '@iconify/react';
 
-import { Animate, Button, Pill } from '~/components';
+import { Animate, Button, Pill, Status } from '~/components';
 import { EventType, NavigationItemType } from '~/types';
 import { Layout } from '~/layouts';
 
@@ -34,6 +34,7 @@ export default function HomePage() {
 
 	const description = `I am a ${age} year old photography enthusiast`;
 
+
 	return (
 		<Layout.Default seo={{ title: 'bhop ─ developer' }}>
 			{isBirthday && <Event event={EventType.BIRTHDAY} />}
@@ -51,6 +52,7 @@ export default function HomePage() {
 						<Pill.Standard className="mt-4">developer</Pill.Standard>
 					</Animate>
 
+
 					<Animate
 						as="p"
 						animation={{
@@ -63,8 +65,15 @@ export default function HomePage() {
 						}}>
 						{description}
 					</Animate>
+					<div className="">
+						<div className="flex-grow flex flex-col justify-center max-w-sm sm:max-w-lg w-full mx-auto px-0 sm:px-16">
+							<Status.Widget />
+						</div>
+					</div>
+
 
 					<div className="flex flex-col sm:flex-row items-center justify-center sm:space-x-4 space-y-4 sm:space-y-0 w-full mt-8 sm:mt-4">
+
 						{ACTIONS.map((action, index) => {
 							if (action.type !== NavigationItemType.LINK) return null;
 

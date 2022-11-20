@@ -3,9 +3,8 @@ import { useLanyard } from 'react-use-lanyard';
 import { DISCORD_STATUS_COLOR } from '~/types';
 
 export function useStatus() {
-	const userId = process.env.NEXT_PUBLIC_DISCORD_ID;
 	const result = useLanyard({
-		userId,
+		userId: "442626774841556992",
 		socket: true,
 	});
 

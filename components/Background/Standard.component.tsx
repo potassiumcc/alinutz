@@ -15,16 +15,16 @@ export function Standard() {
 
 		const renderer = new Renderer({
 			depth: false,
-			dpr: 2,
+			dpr: 1,
 			alpha: true,
 		});
 
 		const gl = renderer.gl;
 
 		const camera = new Camera(gl, {
-			fov: 15,
+			fov: 10,
 		});
-		camera.position.z = 15;
+		camera.position.z = 10;
 
 		function handleReisze(): void {
 			renderer.setSize(window.innerWidth, window.innerHeight);
@@ -43,7 +43,7 @@ export function Standard() {
 			log.error('Failed to initialize canvas', error);
 		}
 
-		const numParticles = 100;
+		const numParticles = 275;
 		const position = new Float32Array(numParticles * 3);
 		const random = new Float32Array(numParticles * 4);
 
