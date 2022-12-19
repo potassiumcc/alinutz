@@ -103,6 +103,30 @@ export default function HomePage() {
 							);
 						})}
 					</div>
+					<div className="flex flex-col sm:flex-row items-center justify-center sm:space-x-4 space-y-4 sm:space-y-0 w-full mt-8 sm:mt-4">
+
+						{ACTIONS.map((action, index) => {
+							if (action.type !== NavigationItemType.LINK) return null;
+
+							return (
+								<Animate
+									animation={{
+										y: [50, 0],
+										opacity: [0, 1],
+									}}
+									className="w-full sm:w-auto"
+									key={index}
+									transition={{
+										delay: 0.1 * (index + 2) + 0.5,
+									}}>
+									<Button.Outline href='https://alinutzshop.mysellix.io/'>
+										{action.icon}
+										<span>sellix</span>
+									</Button.Outline>
+								</Animate>
+							);
+						})}
+					</div>
 				</div>
 			</div>
 		</Layout.Default>
