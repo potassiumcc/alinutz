@@ -1,5 +1,5 @@
 const isProduction = process.env.NODE_ENV === 'production';
-const domain = isProduction ? 'enviroment.cloud' : 'localhost:3000';
+const domain = isProduction ? 'alinutz.xyz' : 'localhost:3000';
 const protocol = isProduction ? 'https' : 'http';
 
 /**

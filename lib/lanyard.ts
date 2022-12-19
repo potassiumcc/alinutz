@@ -4,7 +4,7 @@ import { DISCORD_STATUS_COLOR } from '~/types';
 
 export function useStatus() {
 	const result = useLanyard({
-		userId: "442626774841556992",
+		userId: "775317084229730335",
 		socket: true,
 	});
 

@@ -43,7 +43,7 @@ export function Standard() {
 			log.error('Failed to initialize canvas', error);
 		}
 
-		const numParticles = 275;
+		const numParticles = 450;
 		const position = new Float32Array(numParticles * 3);
 		const random = new Float32Array(numParticles * 4);
 
@@ -71,7 +71,7 @@ export function Standard() {
 					value: 0,
 				},
 				uColor: {
-					value: new Color(colors.primary[500]),
+					value: new Color(colors.primary[560]),
 				},
 			},
 			transparent: true,
